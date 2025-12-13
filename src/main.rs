@@ -34,7 +34,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 			)?)
 		} else {
 			if cmd_options.config != DEFAULT_CONFIG_PATH {
-				eprintln!("Specified config file does not exist, using default values: {}", &cmd_options.config);
+				eprintln!("Specified config file ({}) does not exist, using default values", &cmd_options.config);
 			}
 			Ok(Default::default())
 		}
